@@ -9,7 +9,14 @@ sudo apt-get install -y curl
 sudo apt-get install python-software-properties
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
-# Load nvm and install latest production node
+
+sudo apt-get install -y php5-cli 
+sudo apt-get install -y php5-curl 
+curl -sS https://getcomposer.org/installer | php 
+mv composer.phar /usr/local/bin/composer 
+
+
+# Load nvm and install latest productipon node
 source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
 nvm use v0.10.12
