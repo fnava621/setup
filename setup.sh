@@ -10,24 +10,24 @@ sudo apt-get install python-software-properties
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 
-sudo apt-get install -y php5-cli 
-sudo apt-get install -y php5-curl 
-curl -sS https://getcomposer.org/installer | php 
-mv composer.phar /usr/local/bin/composer 
+# sudo apt-get install -y php5-cli 
+# sudo apt-get install -y php5-curl 
+# curl -sS https://getcomposer.org/installer | php 
+# mv composer.phar /usr/local/bin/composer 
 
 
 # Load nvm and install latest productipon node
-source $HOME/.nvm/nvm.sh
-nvm install v0.10.12
-nvm use v0.10.12
+# source $HOME/.nvm/nvm.sh
+# nvm install v0.10.12
+# nvm use v0.10.12
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
-npm install -g jshint
+# npm install -g jshint
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
-sudo apt-get install -y rlwrap
+# sudo apt-get install -y rlwrap
 
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
@@ -37,7 +37,7 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+# wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # git pull and install dotfiles as well
 cd $HOME
